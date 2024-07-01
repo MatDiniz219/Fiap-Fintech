@@ -1,0 +1,121 @@
+:root {
+    --color-transp: rgba(255, 255, 255, 0.5)
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-image:  linear-gradient(rgba(64, 49, 226, 0.3), rgba(0, 0, 0, 0.3)), url(../images/BackGround.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.tela{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    min-height: 20%;
+}
+
+.header img{
+    margin: auto;
+    min-height: 30%;
+}
+
+.header p {
+    font-size: 1.6rem;
+    margin: auto;
+    min-height: 30%;
+    max-width: 500px;
+}
+
+
+.box{
+    height: 28rem;
+    margin: 2rem auto;
+    max-width: 460px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+.boxheader{
+    border-radius: 40px 40px 0 0;
+    display: flex;
+}
+
+.menu{
+    width: 50%;
+    align-content: center;
+    font-size: 1.6rem;
+}
+
+.full{
+    border-bottom: 2px solid var(--color-transp);
+    border-right: 2px solid var(--color-transp);
+}
+
+.transp{
+    color: var(--color-transp);
+    border: none;
+    border-bottom: 2px solid var(--color-transp);
+}
+
+.transp:hover{
+    color: var(--bs-white);
+    border-bottom: 2px solid var(--color-transp);
+}
+
+.boxmain{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.section{
+    width: 100%;
+    text-align: center;
+}
+
+.section label {
+    position: relative;
+    left: 25px;
+    color: var(--color-transp);
+}
+
+.section input{
+    width: 80%;
+    height: 30px;
+    padding-left: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-bottom: 2px solid var(--color-transp);
+}
+
+::placeholder {
+    color: var(--color-transp);
+}
+
+button{
+    border: none;
+    border-radius: 40px;
+    width: 60%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+}
+
+button:hover{
+    background-color: black;
+}
